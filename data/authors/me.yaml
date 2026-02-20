@@ -1,6 +1,8 @@
 # data/authors/me.yaml
 
-name: "Van Nhat Minh Vo"
+name:
+  display: "Van Nhat Minh Vo"
+
 role: "Imaging Scientist | MRI · Neuroimaging · Cardiovascular Imaging"
 
 organizations:
@@ -8,10 +10,14 @@ organizations:
 
 email: "minhvo89@gmail.com"
 
-# Avatar file must be at: assets/media/authors/me/avatar.jpg
-avatar: "avatar.jpg"
+# Avatar file must be at:
+# assets/media/authors/me/avatar.jpg
+avatar:
+  filename: "avatar.jpg"
 
-bio: "Imaging Scientist focused on MRI pipelines, neuroimaging, and cardiovascular imaging."
+bio: >-
+  Imaging Scientist focused on MRI acquisition, quantitative analysis, and reproducible pipelines
+  for neuroimaging and cardiovascular imaging.
 
 interests:
   - MRI (Magnetic Resonance Imaging)
@@ -21,13 +27,13 @@ interests:
   - Reproducible Imaging Pipelines
 
 social:
-  - icon: orcid
-    icon_pack: custom
+  - icon: id-badge
+    icon_pack: fas
     link: "https://orcid.org/0000-0003-3306-5006"
     label: "ORCID"
 
-  - icon: google-scholar
-    icon_pack: custom
+  - icon: graduation-cap
+    icon_pack: fas
     link: "https://scholar.google.com/citations?user=ImwA5u0AAAAJ&hl=vi"
     label: "Google Scholar"
 
