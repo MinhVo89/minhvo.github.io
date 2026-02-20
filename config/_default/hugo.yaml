@@ -1,65 +1,117 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+hugoblox:
+  schema: "2.0"
 
-# Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
-# Website URL
-baseURL: 'https://example.com/'
+  identity:
+    name: "Van Nhat Minh Vo"
+    organization: ""
+    type: person
+    tagline: ""
+    description: "Imaging Scientist — MRI • Neuroimaging • Cardiovascular Imaging"
+    social:
+      twitter: ""
 
-############################
-## LANGUAGE
-############################
+  theme:
+    mode: system
+    pack: "default"
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+  typography:
+    font: "sans"
+    size: "md"
 
-############################
-## PAGE OPTIONS
-############################
+  layout:
+    radius: "md"
+    spacing: "comfortable"
+    avatar_shape: rounded
 
-cascade:
-  - _target:
-      path: /slides/**
-      kind: page
-    outputs: [HTML, present]
+  header:
+    enable: true
+    style: navbar-simple
+    sticky: true
+    align: left
+    search: false
+    theme_toggle: true
+    theme_picker: false
+    language_switcher: false
+    cta:
+      enable: false
+      text: ""
+      url: ""
 
-############################
-## ADVANCED
-############################
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
 
-build:
-  writeStats: true
-enableGitInfo: false
-summaryLength: 30
-pagination:
-  pagerSize: 10
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-disableAliases: true
-outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 90
-  anchor: smart
-  hint: picture
-timeout: 600000
-taxonomies:
-  author: authors
-  tag: tags
-  publication_type: publication_types
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
+  copyright:
+    notice: "2021 Copyrights - All Rights Reserved Van Nhat Minh Vo."
+    license:
+      type: custom
+
+  seo:
+    title: "Van Nhat Minh Vo"
+    ai:
+      allow:
+        - /
+      disallow: []
+      note: ""
+      contact: ""
+
+  content:
+    math:
+      enable: false
+    toc:
+      enable: false
+    reading_time:
+      enable: false
+    citations:
+      style: apa
+
+  search:
+    enable: false
+    suggestions: []
+    quick_actions: []
+
+  comments:
+    enable: false
+    provider: ""
+
+  analytics:
+    google:
+      measurement_id: ""
+
+  verification:
+    google: ""
+    bing: ""
+
+  repository:
+    enable: false
+    url: ""
+    branch: main
+    content_dir: content
+
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  security:
+    csp:
+      policy: ""
+      report_only: false
+    frame_options: allow
+    permissions_policy: ""
+
+  privacy:
+    enable: false
+    anonymize_analytics: true
+
+  debug:
+    enable: false
+    hud:
+      position: bottom-left
+      opacity: 1.0
+    export_logs: true
+
+  pro:
+    hide_attribution: true
+    affiliate_code: ""
