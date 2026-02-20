@@ -1,25 +1,22 @@
 ---
 title: ""
-summary: ""
-date: 2022-10-24
+date: 2026-01-01
 type: landing
 
-design:
-  spacing: "5rem"
-
 sections:
-  # =========================
-  # HERO (gọn như Eilidh)
-  # =========================
+  # HERO (gọn kiểu 1 trang)
   - block: resume-biography-3
     id: about
     content:
       username: me
       text: |-
-        My research focuses on **translational MRI** for **neuro** and **cardiovascular** applications, with an emphasis on **quantitative imaging biomarkers** and **robust acquisition/analysis pipelines**.
+        **Imaging Scientist** at **King’s College London (IoPPN, Department of Neuroimaging)**.  
+        I work on **preclinical MRI** for **neuro** and **cardiovascular** applications, building robust acquisition & analysis pipelines.
+
       button:
         text: Download CV
-        url: "uploads/resume.pdf"
+        url: uploads/resume.pdf
+
       headings:
         about: ""
         education: ""
@@ -29,55 +26,43 @@ sections:
         gradient_mesh:
           enable: false
       name:
-        size: lg
+        size: xl
       avatar:
-        size: large
-        shape: circle
+        size: xxl
+        shape: rounded
 
-  # =========================
-  # SELECTED MANUSCRIPTS (gọn)
-  # =========================
-  - block: markdown
-    id: publications
-    content:
-      title: "Selected Manuscripts"
-      text: |-
-        *Equal contribution*
-
-        1. **Hiroki Ohta***, **Nhat-Minh Van Vo***, Junichi Hata, Koshiro Terawaki, Takako Shirakawa, Hirotaka James Okano.  
-           **“Utilizing Dynamic Phosphorous-31 Magnetic Resonance Spectroscopy for the Early Detection of Acute Compartment Syndrome: A Pilot Study on Rats.”**  
-           *Diagnostics* (2020). DOI: **10.21203/rs.3.rs-143667/v1**
-    design:
-      columns: "1"
-
-  # =========================
-  # CONTACT (icons như hình bạn muốn)
-  # =========================
+  # CONTACT (icon to như trang bạn gửi)
   - block: markdown
     id: contact
     content:
       title: "CONTACT ME"
       text: |-
-        <div style="display:flex;justify-content:center;gap:44px;align-items:center;flex-wrap:wrap;margin:18px 0 18px 0;">
-          <a href="https://orcid.org/0000-0003-3306-5006" target="_blank" aria-label="ORCID" style="font-size:54px;color:inherit;text-decoration:none;">
-            <i class="ai ai-orcid"></i>
+        <div style="display:flex; justify-content:center; gap:46px; align-items:center; flex-wrap:wrap; margin-top: 18px; margin-bottom: 14px;">
+          <a href="https://orcid.org/0000-0003-3306-5006" target="_blank" aria-label="ORCID" style="width:56px; height:56px; display:inline-flex; align-items:center; justify-content:center;">
+            <img src="/media/icons/custom/orcid.svg" alt="ORCID" style="width:56px; height:56px;" />
           </a>
 
-          <a href="https://scholar.google.com/citations?user=ImwA5u0AAAAJ&hl=vi" target="_blank" aria-label="Google Scholar" style="font-size:54px;color:inherit;text-decoration:none;">
-            <i class="ai ai-google-scholar"></i>
+          <a href="https://scholar.google.com/citations?user=ImwA5u0AAAAJ&hl=vi" target="_blank" aria-label="Google Scholar" style="width:56px; height:56px; display:inline-flex; align-items:center; justify-content:center;">
+            <img src="/media/icons/custom/google-scholar.svg" alt="Google Scholar" style="width:56px; height:56px;" />
           </a>
 
-          <a href="https://github.com/MinhVo89" target="_blank" aria-label="GitHub" style="font-size:54px;color:inherit;text-decoration:none;">
+          <a href="https://github.com/MinhVo89" target="_blank" aria-label="GitHub" style="font-size:54px; color:inherit;">
             <i class="fab fa-github"></i>
           </a>
 
-          <a href="mailto:minhvo89@gmail.com" aria-label="Email" style="font-size:54px;color:inherit;text-decoration:none;">
+          <a href="https://www.linkedin.com/in/minh-vo-778323120/?originalSubdomain=uk" target="_blank" aria-label="LinkedIn" style="font-size:54px; color:inherit;">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:minhvo89@gmail.com" aria-label="Email" style="font-size:54px; color:inherit;">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
 
-        <div style="display:flex;justify-content:center;margin-top:10px;">
-          <a class="btn btn-primary btn-lg" href="/uploads/resume.pdf">DOWNLOAD CV</a>
+        <div style="display:flex; justify-content:center; margin-top: 18px;">
+          <a class="btn btn-primary btn-lg" href="/uploads/resume.pdf" style="border-radius:999px; padding:14px 28px;">
+            DOWNLOAD CV
+          </a>
         </div>
     design:
       columns: "1"
